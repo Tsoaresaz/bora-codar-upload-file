@@ -1,0 +1,11 @@
+.c-alert {
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    &--text {
+
+        &--danger {
+            color: var(--color-e36);
+        }
+    }
+}

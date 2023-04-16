@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de arquivos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/css/style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <main class="main">
+        <div class="c-box-upload">
+            <section class="c-box-upload__upload c-drag-files">
+                <i class="c-drag-files__icon ph ph-cloud-arrow-up"></i>
+                <h2 class="c-drag-files__title">Importe seus arquivos</h2>
+                <p class="c-drag-files__text">Arraste ou clique para fazer o upload</p>
+                <input class="c-drag-files__input" type="file" name="fileUpload" id="fileUpload" data-file-upload>
+            </section>
+            <section class="c-box-upload__uploading c-uploading">
+                <div class="c-uploading__box">
+                   <div class="c-uploading__icon">
+                        <i class="c-uploading__icon-file ph ph-file-arrow-up"></i>
+                   </div> 
+                   <div class="c-uploading__infos">
+                        <div class="c-uploading__info">
+                            <p class="c-uploading__filename">Scann_158.pdf</p>
+                            <p class="c-uploading__filesize">30 MB / 74 MB</p>
+                            <button class="c-uploading__btn c-button">
+                                <i class="ph ph-x"></i>
+                            </button>
+                        </div>
+                        <div class="c-uploading__progress-bar">
+                            <progress class="c-uploading__progress c-uploading__progress--loading" value="46" max="100"></progress>
+                            <span class="c-uploading__percent">46%</span>
+                        </div>
+                   </div>
+                </div>
+                <div class="c-uploading__box">
+                    <div class="c-uploading__icon">
+                         <i class="c-uploading__icon-file ph ph-file-arrow-up"></i>
+                    </div> 
+                    <div class="c-uploading__infos">
+                         <div class="c-uploading__info">
+                             <p class="c-uploading__filename">Scann_158.pdf</p>
+                             <p class="c-uploading__filesize">30 MB / 74 MB</p>
+                             <button class="c-uploading__btn c-button">
+                                 <i class="ph ph-x"></i>
+                             </button>
+                         </div>
+                         <div class="c-uploading__progress-bar">
+                             <progress class="c-uploading__progress c-uploading__progress--complete" value="100" max="100"></progress>
+                             <span class="c-uploading__percent">100%</span>
+                         </div>
+                    </div>
+                 </div>
+                 <div class="c-uploading__box">
+                    <div class="c-uploading__icon">
+                         <i class="c-uploading__icon-file ph ph-file-arrow-up"></i>
+                    </div> 
+                    <div class="c-uploading__infos">
+                         <div class="c-uploading__info">
+                             <p class="c-uploading__filename">Scann_158.pdf</p>
+                             <p class="c-uploading__filesize">30 MB / 74 MB</p>
+                             <button class="c-uploading__btn c-button">
+                                 <i class="ph ph-x"></i>
+                             </button>
+                         </div>
+                         <div class="c-uploading__progress-bar">
+                             <progress class="c-uploading__progress c-uploading__progress--error" value="100" max="100"></progress>
+                             <span class="c-uploading__percent c-alert c-alert--text--danger">Erro</span>
+                         </div>
+                    </div>
+                 </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="./dist/js/app.js"></script>
+    <!-- <script type="module" src="./src/app.js"></script> -->
+</body>
+
+</html>

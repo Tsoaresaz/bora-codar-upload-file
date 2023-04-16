@@ -1,0 +1,16 @@
+.c-box-upload {
+    width: 90%;
+    min-width: 32.2rem;
+    max-width: 44.4rem;
+    height: 16.0rem;
+    border: 1px dashed var(--color-c1b);
+    border-radius: 0.8rem;
+    
+    &__upload {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
