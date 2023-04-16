@@ -17,6 +17,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 - Concurrently
 - Lite-server
 - BEM (Block, Element e Modify)
+- Vercel
 
 ## Projeto
 
@@ -36,7 +37,7 @@ npm run start
 
 ### Preview do projeto
 
-Para acesso a preview do projeto [clique aqui]()
+Para acesso a preview do projeto [clique aqui](https://bora-codar-upload-file-izu4sqsaj-tsoaresaz.vercel.app/)
 
 ## 🔖 Layout
 
