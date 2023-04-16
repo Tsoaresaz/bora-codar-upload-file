@@ -20,12 +20,14 @@
         justify-content: center;
         align-items: center;
         border-radius: 0.4rem;
-        background-color: var(--color-e9e);
+        
+        @include background-color-icon-upload;
     }
 
     &__icon-file {
         font-size: 2.8rem;
-        color: var(--color-ac9);
+        
+        @include color-icon-upload;
     }
 
     &__infos {
@@ -61,7 +63,6 @@
         color: var(--color-794);
         font-size: 1.4rem;
         font-weight: 500;
-        border: 1px solid red;
     }
 
     &__progress-bar {
@@ -76,7 +77,6 @@
         height: 0.8rem;
         border-radius: 999px;
         overflow: hidden;
-        background-color: red;
         appearance: none;
         -webkit-appearance: none;
 
@@ -84,27 +84,7 @@
             background-color: var(--color-e3e);
         }
 
-        &--loading {
-
-            &::-webkit-progress-value {
-                background-color: rgb(var(--color-rgb-3a6));
-                background: -moz-linear-gradient(90deg, #3a61ed85 0%, #7C3AED 100%);
-                background: -webkit-linear-gradient(90deg, #3a61ed85 0%, #7C3AED 100%);
-                background: linear-gradient(90deg, #3a61ed85 0%, #7C3AED 100%);
-            }        
-        }
-
-        &--complete {            
-            &::-webkit-progress-value {
-                background-color: #73B172;
-            }  
-        }
-
-        &--error {            
-            &::-webkit-progress-value {
-                background-color: transparent;
-            }  
-        }
+        @include types-status;
 
     }
 

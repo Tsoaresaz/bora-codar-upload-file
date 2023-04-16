@@ -33,6 +33,11 @@ html, body {
   --color-794: #794FED;
   --color-989: #9892A6;
   --color-e36: #E36363;
+  --color-7c3: #7C3AED;
+  --color-daf: #DAF2D9;
+  --color-73b: #73B172;
+  --color-f2d: #F2D9D9;
+  --color-e36: #E36363;
   --color-rgb-3a6: 58, 97, 237;
 }
 
@@ -112,9 +117,21 @@ html, body {
   border-radius: 0.4rem;
   background-color: var(--color-e9e);
 }
+.c-uploading__icon--complete {
+  background-color: var(--color-daf);
+}
+.c-uploading__icon--error {
+  background-color: var(--color-f2d);
+}
 .c-uploading__icon-file {
   font-size: 2.8rem;
   color: var(--color-ac9);
+}
+.c-uploading__icon-file--complete {
+  color: var(--color-73b);
+}
+.c-uploading__icon-file--error {
+  color: var(--color-e36);
 }
 .c-uploading__infos {
   width: 100%;
@@ -145,7 +162,6 @@ html, body {
   color: var(--color-794);
   font-size: 1.4rem;
   font-weight: 500;
-  border: 1px solid red;
 }
 .c-uploading__progress-bar {
   display: flex;
@@ -158,7 +174,6 @@ html, body {
   height: 0.8rem;
   border-radius: 999px;
   overflow: hidden;
-  background-color: red;
   appearance: none;
   -webkit-appearance: none;
 }
@@ -167,9 +182,9 @@ html, body {
 }
 .c-uploading__progress--loading::-webkit-progress-value {
   background-color: rgb(var(--color-rgb-3a6));
-  background: -moz-linear-gradient(90deg, rgba(58, 97, 237, 0.5215686275) 0%, #7C3AED 100%);
-  background: -webkit-linear-gradient(90deg, rgba(58, 97, 237, 0.5215686275) 0%, #7C3AED 100%);
-  background: linear-gradient(90deg, rgba(58, 97, 237, 0.5215686275) 0%, #7C3AED 100%);
+  background: -moz-linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
+  background: linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
 }
 .c-uploading__progress--complete::-webkit-progress-value {
   background-color: #73B172;
