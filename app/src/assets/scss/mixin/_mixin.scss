@@ -1,48 +1,40 @@
-@mixin types-status {
-    &--loading {
+@mixin loading-complete-error {
+    .loading {
+        background-color: var(--color-e9e);
+
+        > i {
+            color: var(--color-ac9);
+        }
 
         &::-webkit-progress-value {
             background-color: rgb(var(--color-rgb-3a6));
             background: -moz-linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
             background: -webkit-linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
             background: linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
-        }        
+        }
     }
 
-    &--complete {            
+    .complete {
+        background-color: var(--color-daf);
+
+        > i {
+            color: var(--color-73b);
+        }
+
         &::-webkit-progress-value {
-            background-color: #73B172;
-        }  
+            background-color: var(--color-73b);
+        }
     }
 
-    &--error {            
+    .error {
+        background-color: var(--color-f2d);
+
+        > i {
+            color: var(--color-e36);
+        }
+
         &::-webkit-progress-value {
             background-color: transparent;
-        }  
-    }
-}
-
-@mixin background-color-icon-upload {
-    background-color: var(--color-e9e);
-    
-        &--complete {            
-            background-color: var(--color-daf);
         }
-    
-        &--error {            
-            background-color: var(--color-f2d);
-        }
-}
-
-@mixin color-icon-upload {
-
-    color: var(--color-ac9);
-
-    &--complete {            
-        color: var(--color-73b);
-    }
-
-    &--error {
-        color: var(--color-e36);
     }
 }

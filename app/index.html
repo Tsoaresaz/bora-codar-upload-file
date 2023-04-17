@@ -28,25 +28,32 @@
                 <input class="c-drag-files__input" type="file" name="fileUpload" id="fileUpload" data-file-upload>
             </section>
             <section class="c-box-upload__uploading c-uploading">
-                <div class="c-uploading__box">
-                   <div class="c-uploading__icon c-uploading__icon--loading">
+
+                <div class="c-uploading__box" data-uploading-message>
+                    <h3 class="c-uploading__message">Ops... você ainda não enviou nenhum arquivo ;-)</h3>
+                </div>
+
+                <div class="c-uploading__box" data-uploading-box>
+                    <div class="c-uploading__icon loading">
                         <i class="c-uploading__icon-file ph ph-file-arrow-up"></i>
-                   </div> 
-                   <div class="c-uploading__infos">
+                    </div>
+                    <div class="c-uploading__infos">
                         <div class="c-uploading__info">
-                            <p class="c-uploading__filename">Scann_158.pdf</p>
-                            <p class="c-uploading__filesize">30 MB / 74 MB</p>
+                            <p class="c-uploading__filename" data-filename></p>
+                            <p class="c-uploading__filesize" data-file-size></p>
                             <button class="c-uploading__btn c-button">
                                 <i class="ph ph-x"></i>
                             </button>
                         </div>
                         <div class="c-uploading__progress-bar">
-                            <progress class="c-uploading__progress c-uploading__progress--loading" value="46" max="100"></progress>
-                            <span class="c-uploading__percent">46%</span>
+                            <progress class="c-uploading__progress loading" value="0" max="100"
+                                data-progress-bar></progress>
+                            <span class="c-uploading__percent" data-percent-bar></span>
                         </div>
-                   </div>
+                    </div>
                 </div>
-                <div class="c-uploading__box">
+
+                <!-- <div class="c-uploading__box">
                     <div class="c-uploading__icon c-uploading__icon--complete">
                          <i class="c-uploading__icon-file c-uploading__icon-file--complete ph ph-file-arrow-up"></i>
                     </div> 
@@ -63,8 +70,8 @@
                              <span class="c-uploading__percent">100%</span>
                          </div>
                     </div>
-                 </div>
-                 <div class="c-uploading__box">
+                 </div> -->
+                <!-- <div class="c-uploading__box">
                     <div class="c-uploading__icon c-uploading__icon--error">
                          <i class="c-uploading__icon-file c-uploading__icon-file--error ph ph-file-arrow-up"></i>
                     </div> 
@@ -81,7 +88,7 @@
                              <span class="c-uploading__percent c-alert c-alert--text--danger">Erro</span>
                          </div>
                     </div>
-                 </div>
+                 </div> -->
             </section>
         </div>
     </main>

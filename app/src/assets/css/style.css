@@ -108,6 +108,13 @@ html, body {
   background-color: var(--color-fff);
   box-shadow: 0px 0.4rem 1.6rem var(--color-eae);
 }
+.c-uploading__message {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-7a5);
+}
 .c-uploading__icon {
   width: 4.8rem;
   height: 5.6rem;
@@ -115,23 +122,9 @@ html, body {
   justify-content: center;
   align-items: center;
   border-radius: 0.4rem;
-  background-color: var(--color-e9e);
-}
-.c-uploading__icon--complete {
-  background-color: var(--color-daf);
-}
-.c-uploading__icon--error {
-  background-color: var(--color-f2d);
 }
 .c-uploading__icon-file {
   font-size: 2.8rem;
-  color: var(--color-ac9);
-}
-.c-uploading__icon-file--complete {
-  color: var(--color-73b);
-}
-.c-uploading__icon-file--error {
-  color: var(--color-e36);
 }
 .c-uploading__infos {
   width: 100%;
@@ -180,18 +173,6 @@ html, body {
 .c-uploading__progress::-webkit-progress-bar {
   background-color: var(--color-e3e);
 }
-.c-uploading__progress--loading::-webkit-progress-value {
-  background-color: rgb(var(--color-rgb-3a6));
-  background: -moz-linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
-  background: linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
-}
-.c-uploading__progress--complete::-webkit-progress-value {
-  background-color: #73B172;
-}
-.c-uploading__progress--error::-webkit-progress-value {
-  background-color: transparent;
-}
 .c-uploading ::-webkit-progress-value {
   background-color: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
 }
@@ -199,6 +180,43 @@ html, body {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--color-989);
+}
+
+.loading {
+  background-color: var(--color-e9e);
+}
+.loading > i {
+  color: var(--color-ac9);
+}
+.loading::-webkit-progress-value {
+  background-color: rgb(var(--color-rgb-3a6));
+  background: -moz-linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
+  background: linear-gradient(90deg, rgba(var(--color-rgb-3a6), 0.522) 0%, var(--color-7c3) 100%);
+}
+
+.complete {
+  background-color: var(--color-daf);
+}
+.complete > i {
+  color: var(--color-73b);
+}
+.complete::-webkit-progress-value {
+  background-color: var(--color-73b);
+}
+
+.error {
+  background-color: var(--color-f2d);
+}
+.error > i {
+  color: var(--color-e36);
+}
+.error::-webkit-progress-value {
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
 }
 
 .c-button {

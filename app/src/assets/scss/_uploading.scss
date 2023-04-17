@@ -13,6 +13,14 @@
         box-shadow: 0px 0.4rem 1.6rem var(--color-eae);
     }
 
+    &__message {
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--color-7a5);
+    }
+
     &__icon {
         width: 4.8rem;
         height: 5.6rem;
@@ -21,13 +29,13 @@
         align-items: center;
         border-radius: 0.4rem;
         
-        @include background-color-icon-upload;
+        //@include background-color-icon-upload;        
     }
 
     &__icon-file {
         font-size: 2.8rem;
         
-        @include color-icon-upload;
+        //@include color-icon-upload;
     }
 
     &__infos {
@@ -84,7 +92,7 @@
             background-color: var(--color-e3e);
         }
 
-        @include types-status;
+        //@include types-status;
 
     }
 
@@ -97,4 +105,10 @@
         font-weight: 500;
         color: var(--color-989);
     }
+}
+
+@include loading-complete-error;
+
+.hidden {
+    display: none;
 }
